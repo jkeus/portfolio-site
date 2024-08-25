@@ -1,4 +1,4 @@
-# React + Vite
+# Description
 
 Portfolio Site using React.js to 
 -showcase projects 
