@@ -2,9 +2,6 @@
 import React from 'react';
 import styles from  './HeroStyles.module.css';
 import meImage from '../../assets/portrait-img.png';
-import themeIcon from '../../assets/sun.svg';
-import linkedInIcon from '../../assets/linkedin-light.svg';
-import githubIcon from '../../assets/github-light.svg';
 import CV from '../../assets/Jackson-Keus-Resume.pdf';
 import { useTheme } from '../../common/ThemeContext';
 import sun from '../../assets/sun.svg';
