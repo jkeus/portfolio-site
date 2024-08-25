@@ -1,0 +1,16 @@
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 350px; /* Ensure the card doesn't grow too wide */
+    height: 100%;
+    /* Optional: Add a fixed height for cards, or use flex properties to fill the available space */
+  }
+  
+.projectCardContent {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+flex: 1;
+}
