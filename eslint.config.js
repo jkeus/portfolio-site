@@ -35,5 +35,6 @@ export default [
       ],
       "no-unused-vars": "warn",
     },
+    assetsInclude: ['**/*.JPG'],
   },
 ]

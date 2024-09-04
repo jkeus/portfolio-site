@@ -1,8 +1,8 @@
 
 import React from 'react';
 import styles from  './HeroStyles.module.css';
-import meImage from '../../assets/portrait-img.png';
-import CV from '../../assets/Jackson-Keus-Resume.pdf';
+import meImage from '../../assets/jackson-portrait-site-cropped.png';
+import CV from '../../assets/Jackson_Keus_Resume.pdf';
 import { useTheme } from '../../common/ThemeContext';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
