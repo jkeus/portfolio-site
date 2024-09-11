@@ -19,38 +19,47 @@ function Hero() {
   const githubIcon = theme === 'light' ? githubLight: githubDark;
 
   return (
-    <section id="Hero" className={styles.container}>
-      <div className={styles.colorModeContainer}>
-        <img className={styles.Hero} 
-        src={meImage} 
-        alt="Profile picture of Jackson Keus" 
-        />
-        <img 
-        className={styles.colorMode}
-        src={themeIcon} 
-        alt="Color mode icon"
-        onClick={toggleTheme}
-        />
-      </div>
-      <div className={styles.info}>
-        <h1>Jackson <br /> Keus</h1>
-        <h2>Software Developer</h2>
-        <span>
-          <a href='https://www.linkedin.com/in/jackson-keus/' target="_blank">
-            <img src={linkedInIcon} alt='LinkedIn Icon'></img>
+<section id="Hero" className="container d-flex align-items-center justify-content-center min-vh-100 py-5">
+  <div className="row w-100">
+    {/* Text Section */}
+    <div className="col-md-6 order-2 order-md-1 d-flex flex-column justify-content-center align-items-center">
+      <div className={`d-flex flex-column align-items-center ${styles.info}`}>
+        <h1 className={styles.name}>Jackson</h1>
+        <h2 className={styles.surname}>Keus</h2>
+        <div className="d-flex gap-3 mb-3 justify-content-center">
+          <a href="https://www.linkedin.com/in/jackson-keus/" target="_blank" rel="noopener noreferrer">
+            <img src={linkedInIcon} alt="LinkedIn Icon" className={styles.socialIcon} />
           </a>
-          <a href='https://github.com/jkeus' target="_blank">
-            <img src={githubIcon} alt='GitHub Icon'></img>
+          <a href="https://github.com/jkeus" target="_blank" rel="noopener noreferrer">
+            <img src={githubIcon} alt="GitHub Icon" className={styles.socialIcon} />
           </a>
-        </span>
-        <p>Senior Computer Science student with a passion for problem solving and new technologies.</p>
+        </div>
+        <p className={styles.description}>
+          Senior Computer Science student with a passion for problem solving and new technologies.
+        </p>
         <a href={CV} download>
-          <button className='hover'>
+          <button className={`btn ${styles.resumeButton}`}>
             Resume
           </button>
         </a>
       </div>
-    </section>
+    </div>
+
+    {/* Image Section */}
+    <div className="col-md-6 order-1 order-md-2 d-flex justify-content-center position-relative">
+      <img className={`img-fluid ${styles.profileImage}`} src={meImage} alt="Profile picture of Jackson Keus" />
+      <img
+        className={`position-absolute top-0 end-0 ${styles.themeIcon}`}
+        src={themeIcon}
+        alt="Color mode icon"
+        onClick={toggleTheme}
+      />
+    </div>
+  </div>
+</section>
+
+
+
   );
 }
 
